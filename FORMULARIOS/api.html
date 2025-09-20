@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="css/estilo2.css">
+    <script src="https://kit.fontawesome.com/e1f71094a0.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="Nav_elem">
+            <input type="text" name="Buscar" onclick="">
+            <nav>
+                <ul>
+                    <li class="login"><a href="productos.html">Inicia Sesion</a></li>
+                    <li class="carrito"><i class="fa-solid fa-cart-shopping"></i></li>
+                    <li class="Compras"><i class="fa-solid fa-regular fa-truck"></i></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h1>Lista de Pokémones</h1>
+    <button class="btn-agregar" onclick="ocultarForm(); conexionFetch();">Ver Pokemones</button>
+    <div id="cont_pokemon">
+        <div id="pokemon" class="elementos"></div>
+    </div>
+    <script src="js/fetch2.js">
+    </script>
+</body>
+
+</html>
