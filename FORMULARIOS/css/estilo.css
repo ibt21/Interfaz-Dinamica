@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    padding: 0 24px;
+    
+}
+header {
+    background: #2575fc;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 15px 25px;
+    margin-bottom: 30px;
+}
+
+.Nav_elem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Nav_elem input[type="text"] {
+    flex: 1;
+    max-width: 500px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.Nav_elem input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+nav ul li:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+}
+
+nav ul li i {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.contenedor_principal {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.elementos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 2vh;
+}
+
+.contenedor {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contenedor:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contenedor h2 {
+    padding: 15px;
+    color: #333;
+    font-size: 18px;
+}
+
+.contenedor p {
+    padding: 0 15px;
+    color: #666;
+    flex-grow: 1;
+    line-height: 1.5;
+}
+
+.contenedor button {
+    margin: 15px;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+}
+
+.contenedor button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+input[type="button"] {
+    display: block;
+    margin: 0 auto 30px auto;
+    background: #2575fc;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+}
+
+input[type="button"]:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    background: #6a11cb;
+}
+
+.contenedor_formulario_producto_nuevo {
+    width: 40vw;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: none;
+    grid-gap: 15px;
+    margin: 0 auto;
+}
+
+.contenedor_formulario_producto_nuevo form {
+    display: grid;
+    gap: 15px;
+}
+
+.contenedor_formulario_producto_nuevo label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #555;
+}
+
+.contenedor_formulario_producto_nuevo input,
+.contenedor_formulario_producto_nuevo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.contenedor_formulario_producto_nuevo input:focus,
+.contenedor_formulario_producto_nuevo textarea:focus {
+    outline: none;
+    border-color: #6a11cb;
+}
+
+.contenedor_formulario_producto_nuevo textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.contenedor_formulario_producto_nuevo button {
+    background: #2575fc;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.contenedor_formulario_producto_nuevo button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    background-color: #6a11cb;
+}
+
+.imagen-previsulizacion {
+    border: 2px dashed #ddd;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+    .Nav_elem {
+        flex-direction: column;
+    }
+
+    .Nav_elem input[type="text"] {
+        width: 100%;
+        margin: 15px 0;
+        max-width: none;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+
+    .contenedor_formulario_producto_nuevo {
+        width: 90vw;
+    }
+}

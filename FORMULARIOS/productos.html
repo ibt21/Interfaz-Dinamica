@@ -8,22 +8,23 @@
     <title>Formularios Dinammicos</title>
     <script src="https://kit.fontawesome.com/e1f71094a0.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<header>
-    <div class="Nav_elem">
-    <input type="text" name="Buscar" onclick="">
-    <nav>
-        <ul>
-            <li class="login">Inicia Sesion</li>
-            <li class="carrito"><a href="api.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-            <li class="Compras"><i class="fa-solid fa-regular fa-truck"></i></li>
-        </ul>
-    </nav>
-    </div>
-</header>
+    <header>
+        <div class="Nav_elem">
+            <input type="text" name="Buscar" onclick="">
+            <nav>
+                <ul>
+                    <li class="inicio"><a href="index.html">Inicio</a></li>
+                    <li class="carrito"><a href="productos.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li class="Compras"><a href="api.html"><i class="fa-solid fa-regular fa-truck"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <main>
-
+        <h1>¡Hola!, ¿Te Gustaría Agragar Algún Producto?</h1>
         <form id="formulario_dinamico" class="formulario_dinamico">
             <!--label for="Cantidad">Ingresa cantidad de elementos</label-->
             <!--input type="number" name="Cantidad" id="cantidad" onchange="crearimagen(event)"-->
@@ -73,6 +74,5 @@
 </body>
 <script src="js/script.js"></script>
 <script src="js/formulario.js"></script>
-<script src="js/fetch2.js"></script>
 
 </html>

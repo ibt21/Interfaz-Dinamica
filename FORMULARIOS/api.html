@@ -16,15 +16,15 @@
             <input type="text" name="Buscar" onclick="">
             <nav>
                 <ul>
-                    <li class="login"><a href="productos.html">Inicia Sesion</a></li>
-                    <li class="carrito"><i class="fa-solid fa-cart-shopping"></i></li>
-                    <li class="Compras"><i class="fa-solid fa-regular fa-truck"></i></li>
+                    <li class="inicio"><a href="index.html">Inicio</a></li>
+                    <li class="carrito"><a href="productos.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li class="Compras"><i class="fa-solid fa-regular fa-truck"><a href="#"></a></i></li>
                 </ul>
             </nav>
         </div>
     </header>
     <h1>Lista de Pokémones</h1>
-    <button class="btn-agregar" onclick="ocultarForm(); conexionFetch();">Ver Pokemones</button>
+    <button class="btn-agregar" onclick="conexionFetch(); ocultarForm();">Ver Pokemones</button>
     <div id="cont_pokemon">
         <div id="pokemon" class="elementos"></div>
     </div>
